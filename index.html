@@ -11,32 +11,30 @@
             padding: 0;
             line-height: 1.6;
             background-color: #1e1e1e; /* Dark grey background */
-            color: #e0e0e0; /* Light grey text */
+            color: #d3d3d3; /* Light grey text */
         }
         header {
-            background: #222; /* Slightly darker header */
-            color: #fff; /* White for strong contrast */
-            padding: 15px 20px;
+            background: #222;
+            color: #fff;
+            padding: 15px;
             text-align: center;
             font-size: 1.8em;
         }
-        section {
-            padding: 20px;
-            margin: 20px auto;
-            background: #292929; /* Slightly lighter grey */
+        main {
             max-width: 800px;
-            border-radius: 6px;
-            border: 1px solid #3d3d3d; /* Subtle border */
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+            margin: 20px auto;
+            padding: 0 20px;
         }
-        h2 {
-            color: #f2f2f2; /* Almost white */
-            margin-bottom: 10px;
+        .section-title {
+            font-size: 1.3em;
+            margin-top: 20px;
+            color: #f0f0f0;
         }
-        ul {
-            list-style-type: disc;
-            margin: 10px 0;
-            padding-left: 20px;
+        p, li {
+            margin: 8px 0;
+        }
+        .content {
+            padding: 5px 0;
         }
         footer {
             text-align: center;
@@ -48,13 +46,6 @@
             bottom: 0;
             width: 100%;
         }
-        a {
-            color: #66aaff; /* Cool blue links */
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
     </style>
 </head>
 <body>
@@ -63,80 +54,81 @@
     Chess Master Proposal
 </header>
 
-<section>
-    <h2>Product Name</h2>
-    <p><strong>Name:</strong> Chess Master</p>
-</section>
+<main>
+    <div class="content">
+        <div class="section-title">Product Name</div>
+        <p>Chess Master</p>
+    </div>
 
-<section>
-    <h2>Team Members</h2>
-    <p>Jason Novak</p>
-</section>
+    <div class="content">
+        <div class="section-title">Team Members</div>
+        <p>Jason Novak</p>
+    </div>
 
-<section>
-    <h2>Application Overview</h2>
-    <p>
-        Chess Master is a modern, user-friendly online chess platform designed for players of all skill levels. 
-        Challenge friends or go head-to-head against AI opponents with customizable difficulty settings.
-        Track your progress, improve your strategy, and experience the timeless game of chess like never before.
-    </p>
-</section>
+    <div class="content">
+        <div class="section-title">Application Overview</div>
+        <p>
+            Chess Master is a web-based platform where users can enjoy the classic game of chess. Play against friends,
+            compete with AI opponents of varying difficulties, and improve your skills with interactive tutorials.
+        </p>
+    </div>
 
-<section>
-    <h2>Technology Overview</h2>
-    <ul>
-        <li><strong>Languages:</strong> HTML, CSS, JavaScript</li>
-        <li><strong>Libraries:</strong> Chess.js, Chessboard.js</li>
-        <li><strong>Platform:</strong> Web-based</li>
-        <li><strong>Hosting:</strong> GitHub Pages</li>
-    </ul>
-</section>
+    <div class="content">
+        <div class="section-title">Technology Overview</div>
+        <p>
+            <strong>Languages:</strong> HTML, CSS, JavaScript<br>
+            <strong>Libraries:</strong> Chess.js, Chessboard.js<br>
+            <strong>Platform:</strong> Web-based<br>
+            <strong>Hosting:</strong> GitHub Pages
+        </p>
+    </div>
 
-<section>
-    <h2>Proposal Last Updated</h2>
-    <p>November 18, 2024</p>
-</section>
+    <div class="content">
+        <div class="section-title">Proposal Last Updated</div>
+        <p>November 18, 2024</p>
+    </div>
 
-<section>
-    <h2>Feature List</h2>
-    <ul>
-        <li>Two-player mode for local or online play</li>
-        <li>AI opponent with adjustable difficulty levels</li>
-        <li>Game history and move tracking</li>
-        <li>Interactive tutorials for beginners</li>
-    </ul>
-</section>
+    <div class="content">
+        <div class="section-title">Feature List</div>
+        <p>
+            - Two-player mode for local and online play<br>
+            - Adjustable AI difficulty levels<br>
+            - Game history and move tracking<br>
+            - Interactive tutorials for beginners
+        </p>
+    </div>
 
-<section>
-    <h2>Future Feature List</h2>
-    <ul>
-        <li>Advanced AI engine with adaptive learning</li>
-        <li>Mobile app support</li>
-        <li>Leaderboard and ranking system</li>
-        <li>Customizable chessboards and pieces</li>
-    </ul>
-</section>
+    <div class="content">
+        <div class="section-title">Future Feature List</div>
+        <p>
+            - Advanced AI engine with adaptive learning<br>
+            - Leaderboards and ranking system<br>
+            - Mobile app integration<br>
+            - Customizable chessboards and pieces
+        </p>
+    </div>
 
-<section>
-    <h2>Basic Technical Features</h2>
-    <ul>
-        <li>Responsive design for desktop and mobile</li>
-        <li>Basic move validation using Chess.js</li>
-        <li>Custom board rendering with Chessboard.js</li>
-    </ul>
-</section>
+    <div class="content">
+        <div class="section-title">Basic Technical Features</div>
+        <p>
+            - Responsive design for desktop and mobile<br>
+            - Move validation using Chess.js<br>
+            - Custom board rendering with Chessboard.js
+        </p>
+    </div>
 
-<section>
-    <h2>Advanced Technical Features</h2>
-    <ul>
-        <li>Integration of AI opponent using Minimax algorithm</li>
-        <li>Real-time multiplayer with WebSockets</li>
-        <li>Save/load functionality with local storage</li>
-    </ul>
-</section>
+    <div class="content">
+        <div class="section-title">Advanced Technical Features</div>
+        <p>
+            - AI opponent using Minimax algorithm<br>
+            - Real-time multiplayer with WebSockets<br>
+            - Save/load functionality with local storage
+        </p>
+    </div>
+</main>
 
 <footer>
-    <p>© 2024 Jason Novak • Chess Master</p>
+    © 2024 Jason Novak • Chess Master
 </footer>
 
 </body>
