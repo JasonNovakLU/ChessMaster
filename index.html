@@ -13,6 +13,14 @@
             background-color: #1a1a1a; /* Dark black background */
             color: #e0e0e0; /* Light grey text */
         }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #333; /* Dark grey background */
+            border-radius: 8px;
+            padding: 20px;
+            border: 1px solid #444; /* Unified border for the whole page */
+        }
         header {
             background: #000; /* Pure black header */
             color: #fff; /* White text for contrast */
@@ -22,20 +30,11 @@
             letter-spacing: 1px;
             border-bottom: 3px solid #444; /* Subtle divider */
         }
-        main {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 0 20px;
-        }
         .content {
             padding: 20px;
             margin-bottom: 15px;
-            background: #333; /* Dark grey background for sections */
+            background: #222; /* Slightly darker grey background for sections */
             border-radius: 8px;
-            border: 1px solid #444; /* Subtle section border */
-        }
-        .content:nth-child(even) {
-            background: #222; /* Alternating black/grey for a chessboard feel */
         }
         .section-title {
             font-size: 1.3em;
@@ -51,9 +50,6 @@
             background: #000;
             color: #fff;
             font-size: 0.9em;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
             border-top: 3px solid #444;
         }
         a {
@@ -67,11 +63,11 @@
 </head>
 <body>
 
-<header>
-    Chess Master Proposal
-</header>
+<div class="container">
+    <header>
+        Chess Master Proposal
+    </header>
 
-<main>
     <div class="content">
         <div class="section-title">Product Name</div>
         <p>Chess Master</p>
@@ -142,11 +138,11 @@
             - Save/load functionality with local storage
         </p>
     </div>
-</main>
 
-<footer>
-    © 2024 Jason Novak • Chess Master
-</footer>
+    <footer>
+        © 2024 Jason Novak • Chess Master
+    </footer>
+</div>
 
 </body>
 </html>
