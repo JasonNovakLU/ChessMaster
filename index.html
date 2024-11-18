@@ -6,20 +6,12 @@
     <title>Chess Master Proposal</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
             line-height: 1.6;
-            background-color: #1e1e1e; /* Dark grey background */
-            color: #d3d3d3; /* Light grey text */
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background: #2c2c2c; /* Slightly lighter grey for section background */
-            border-radius: 8px;
-            border: 1px solid #444; /* Single, unified border */
+            background-color: #1a1a1a; /* Dark black background */
+            color: #e0e0e0; /* Light grey text */
         }
         header {
             background: #000; /* Pure black header */
@@ -30,28 +22,42 @@
             letter-spacing: 1px;
             border-bottom: 3px solid #444; /* Subtle divider */
         }
-        section {
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .content {
             padding: 20px;
-            margin: 10px 0;
+            margin-bottom: 15px;
             background: #333; /* Dark grey background for sections */
             border-radius: 8px;
+            border: 1px solid #444; /* Subtle section border */
         }
-        h2 {
-            color: #f0f0f0; /* Almost white for headers */
+        .content:nth-child(even) {
+            background: #222; /* Alternating black/grey for a chessboard feel */
         }
-        p, ul {
+        .section-title {
+            font-size: 1.3em;
+            margin-bottom: 10px;
+            color: #f8f8f8; /* Slightly brighter text for headers */
+        }
+        p, li {
             margin: 8px 0;
         }
         footer {
             text-align: center;
             padding: 10px;
-            background: #333;
+            background: #000;
             color: #fff;
             font-size: 0.9em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
             border-top: 3px solid #444;
         }
         a {
-            color: #66aaff; /* Blue links for visibility */
+            color: #66aaff; /* Cool blue links */
             text-decoration: none;
         }
         a:hover {
@@ -61,86 +67,86 @@
 </head>
 <body>
 
-<div class="container">
-    <header>
-        Chess Master Proposal
-    </header>
+<header>
+    Chess Master Proposal
+</header>
 
-    <section>
-        <h2>Product Name</h2>
-        <p><strong>Name:</strong> Chess Master</p>
-    </section>
+<main>
+    <div class="content">
+        <div class="section-title">Product Name</div>
+        <p>Chess Master</p>
+    </div>
 
-    <section>
-        <h2>Team Members</h2>
+    <div class="content">
+        <div class="section-title">Team Members</div>
         <p>Jason Novak</p>
-    </section>
+    </div>
 
-    <section>
-        <h2>Application Overview</h2>
+    <div class="content">
+        <div class="section-title">Application Overview</div>
         <p>
             Chess Master is a web-based platform where users can enjoy the timeless game of chess. Whether playing against friends 
             or challenging AI opponents, Chess Master provides an engaging and sleek interface for players of all skill levels.
         </p>
-    </section>
+    </div>
 
-    <section>
-        <h2>Technology Overview</h2>
-        <ul>
-            <li><strong>Languages:</strong> HTML, CSS, JavaScript</li>
-            <li><strong>Libraries:</strong> Chess.js, Chessboard.js</li>
-            <li><strong>Platform:</strong> Web-based</li>
-            <li><strong>Hosting:</strong> GitHub Pages</li>
-        </ul>
-    </section>
+    <div class="content">
+        <div class="section-title">Technology Overview</div>
+        <p>
+            <strong>Languages:</strong> HTML, CSS, JavaScript<br>
+            <strong>Libraries:</strong> Chess.js, Chessboard.js<br>
+            <strong>Platform:</strong> Web-based<br>
+            <strong>Hosting:</strong> GitHub Pages
+        </p>
+    </div>
 
-    <section>
-        <h2>Proposal Last Updated</h2>
+    <div class="content">
+        <div class="section-title">Proposal Last Updated</div>
         <p>November 18, 2024</p>
-    </section>
+    </div>
 
-    <section>
-        <h2>Feature List</h2>
-        <ul>
-            <li>Two-player mode for local and online play</li>
-            <li>Adjustable AI difficulty levels</li>
-            <li>Game history and move tracking</li>
-            <li>Interactive tutorials for beginners</li>
-        </ul>
-    </section>
+    <div class="content">
+        <div class="section-title">Feature List</div>
+        <p>
+            - Two-player mode for local and online play<br>
+            - Adjustable AI difficulty levels<br>
+            - Game history and move tracking<br>
+            - Interactive tutorials for beginners
+        </p>
+    </div>
 
-    <section>
-        <h2>Future Feature List</h2>
-        <ul>
-            <li>Advanced AI engine with adaptive learning</li>
-            <li>Leaderboards and ranking system</li>
-            <li>Mobile app integration</li>
-            <li>Customizable chessboards and pieces</li>
-        </ul>
-    </section>
+    <div class="content">
+        <div class="section-title">Future Feature List</div>
+        <p>
+            - Advanced AI engine with adaptive learning<br>
+            - Leaderboards and ranking system<br>
+            - Mobile app integration<br>
+            - Customizable chessboards and pieces
+        </p>
+    </div>
 
-    <section>
-        <h2>Basic Technical Features</h2>
-        <ul>
-            <li>Responsive design for desktop and mobile</li>
-            <li>Move validation using Chess.js</li>
-            <li>Custom board rendering with Chessboard.js</li>
-        </ul>
-    </section>
+    <div class="content">
+        <div class="section-title">Basic Technical Features</div>
+        <p>
+            - Responsive design for desktop and mobile<br>
+            - Move validation using Chess.js<br>
+            - Custom board rendering with Chessboard.js
+        </p>
+    </div>
 
-    <section>
-        <h2>Advanced Technical Features</h2>
-        <ul>
-            <li>AI opponent using Minimax algorithm</li>
-            <li>Real-time multiplayer with WebSockets</li>
-            <li>Save/load functionality with local storage</li>
-        </ul>
-    </section>
+    <div class="content">
+        <div class="section-title">Advanced Technical Features</div>
+        <p>
+            - AI opponent using Minimax algorithm<br>
+            - Real-time multiplayer with WebSockets<br>
+            - Save/load functionality with local storage
+        </p>
+    </div>
+</main>
 
-    <footer>
-        © 2024 Jason Novak • Chess Master
-    </footer>
-</div>
+<footer>
+    © 2024 Jason Novak • Chess Master
+</footer>
 
 </body>
 </html>
